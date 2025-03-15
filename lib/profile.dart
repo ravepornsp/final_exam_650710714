@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './component/navbar.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class Profile extends StatelessWidget {
                   "Raveporn Supapanchai",
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 5),  
+                const SizedBox(height: 5),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -87,6 +88,7 @@ class Profile extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const BottomNavbar(currentIndex: 0),
     );
   }
 }

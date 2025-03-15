@@ -1,3 +1,5 @@
+import 'package:final_exam_650710714/answer1.dart';
+import 'package:final_exam_650710714/answer2.dart';
 import 'package:flutter/material.dart';
 import 'profile.dart';
 
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/profile',
       routes: {
         '/profile': (context) => const Profile(),
+        '/answer1': (context) => RegistrationForm(),
+        '/answer2': (context) => CalculatorForm(),
       },
     );
   }
